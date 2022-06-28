@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cra-with-ci-pipeline/static/css/main.9d5b29c0.chunk.css",
+    "main.css": "/cra-with-ci-pipeline/static/css/main.766f75e3.chunk.css",
     "main.js": "/cra-with-ci-pipeline/static/js/main.fcd2d2aa.chunk.js",
     "main.js.map": "/cra-with-ci-pipeline/static/js/main.fcd2d2aa.chunk.js.map",
     "runtime-main.js": "/cra-with-ci-pipeline/static/js/runtime-main.81d69bc5.js",
@@ -10,14 +10,14 @@
     "static/js/3.f44a4c59.chunk.js": "/cra-with-ci-pipeline/static/js/3.f44a4c59.chunk.js",
     "static/js/3.f44a4c59.chunk.js.map": "/cra-with-ci-pipeline/static/js/3.f44a4c59.chunk.js.map",
     "index.html": "/cra-with-ci-pipeline/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/cra-with-ci-pipeline/static/css/main.9d5b29c0.chunk.css.map",
+    "static/css/main.766f75e3.chunk.css.map": "/cra-with-ci-pipeline/static/css/main.766f75e3.chunk.css.map",
     "static/js/2.f15bb204.chunk.js.LICENSE.txt": "/cra-with-ci-pipeline/static/js/2.f15bb204.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/cra-with-ci-pipeline/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.81d69bc5.js",
     "static/js/2.f15bb204.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
+    "static/css/main.766f75e3.chunk.css",
     "static/js/main.fcd2d2aa.chunk.js"
   ]
 }
