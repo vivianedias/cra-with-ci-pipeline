@@ -1,29 +1,14 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: CI/CD CRA
+name: Deploy
 
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
-  sonarcloud:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: SonarCloud Scan
-      uses: sonarsource/sonarcloud-github-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
 
     strategy:
@@ -44,12 +29,7 @@ jobs:
       run: npm ci
     
     - name: Run tests
-      run: npm test -- --coverage
-
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+      run: npm test
     
     - name: Build
       run: npm run build
@@ -65,5 +45,4 @@ jobs:
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
-      
-    
+
